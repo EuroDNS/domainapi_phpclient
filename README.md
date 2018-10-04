@@ -8,7 +8,7 @@ The domainAPI PHP Wrapper is a simple connector to access all webservices of [do
 
 1- Clone the project with Git by running:
 
-    $ git clone git://github.com/domainapi/domainAPI_php_wrapper
+    $ git clone git://github.com/EuroDNS/domainapi_phpclient
 
     Or download the project in either [zip](https://github.com/domainapi/domainAPI_php_wrapper/zipball/master "Download in zip format") or [tar](https://github.com/domainapi/domainAPI_php_wrapper/tarball/master "Download in tar format") formats.
 
@@ -21,7 +21,7 @@ The domainAPI PHP Wrapper is a simple connector to access all webservices of [do
 
     <?php
       // Require domainAPI PHP wrapper
-      require 'domainAPI_php_wrapper/DomainAPI_class.inc.php';
+      require 'domainapi_phpclient/DomainAPI_class.inc.php';
 
       //Make a call to the webservice whois with a xml return
       //type for the domain name : example.com
@@ -37,7 +37,7 @@ The domainAPI PHP Wrapper is a simple connector to access all webservices of [do
 
     <?php
 	// Require domainAPI PHP wrapper
-      require 'domainAPI_php_wrapper/DomainAPI_class.inc.php';
+      require 'domainapi_phpclient/DomainAPI_class.inc.php';
 
     // we get the default configuration
 	$configuration = new DomainAPIConfiguration();
