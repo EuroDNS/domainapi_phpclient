@@ -1,4 +1,4 @@
-# DomainAPI PHP Wrapper #
+# DomainAPI PHP Client #
 
 ## Presentation ##
 
