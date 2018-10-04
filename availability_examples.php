@@ -11,8 +11,8 @@ $response = DomainAPI::from("availability", $configuration, $USERNAME, $PASSWORD
 var_dump($response);
 
 
-// Single request returning the list domain name and if there are available or not.
-// You can filter them by
+// Single request returning the list of domain names and if there are available or not.
+// It is possoble to filter them by
 // - region GEN, EU, ASIA, AEU, PREREG (ngtld), AMERICAS, AFRICA
 $response = DomainAPI::from("availability", $configuration, $USERNAME, $PASSWORD)
     ->withType("json")->where(array('regions' => array('GEN', 'EU')))->get("example");
@@ -20,7 +20,7 @@ var_dump($response);
 
 
 // The client does't support streams, it has to be done by your own hand.
-// However this kind of call must allow you to build reactive availability result
+// However this kind of calls must allow to build reactive availability results
 // When selecting your returning format, instead 'json' or 'xml', just use 'rt'
 $response = DomainAPI::from("availability", $configuration, $USERNAME, $PASSWORD)->withType("rt")->get("example");
 
